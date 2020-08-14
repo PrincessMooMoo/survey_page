@@ -1,0 +1,41 @@
+.flex-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.green-background {
+    background-color: green;
+}
+
+.white {
+    color: white;
+}
+
+body {
+    position: relative;
+    background-color: white;
+}
+
+.main-header {
+    font-family: sans-serif;
+    color: white;
+    height: 90px;
+    width: 600px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#survey-form {
+    border-radius: 10px;
+    width: 1000px;
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 20px;
+}
+
+.center-content {
+    text-align: center;
+}

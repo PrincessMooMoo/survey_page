@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="stylesheet.css" type="text/css" rel="stylesheet" media="screen"/>
+</head>
+
+<body class="flex-box">
+    <header class="main-header green-background">
+        <h1 id="title">Breakfast Foods Survey</h1>
+    </header>
+    <main>
+        <p id="description" class="center-content">
+            This survey is for collecting data on people's favorite breakfast foods.
+        </p><br>
+        <form id="survey-form" class="green-background white">
+            <label for="name" id="name-label">
+                <h3>What is your name?</h3>
+                <input type="text" required id="name" placeholder="name">
+            </label><br><br>
+            <label for="email" id="email-label">
+                <h3>What is your email address?</h3>
+                <input type="email" required id="email" placeholder="email">
+            </label><br><br>
+            <label for="number" id="number-label">
+                <h3>How old are you?</h3>
+                <input type="number" required id="number" placeholder="age" min="10" max="99">
+            </label><br></br>
+            <h3 class="#">What is your current role?</h3>
+            <select id="dropdown">
+                <option value="student">Student</option>
+                <option value="full-time">Full-time Worker</option>
+                <option value="full-time">Part-time Worker</option>
+                <option value="full-time">Unemployed</option>
+                <option value="retired">Retired</option>
+            </select><br><br>
+            <h3 class="#">Do you eat breakfast?</h3>
+            <label for="yes">
+                <input type="radio" id="yes" name="yes-no-sometimes" value="Yes"> Yes
+            </label>
+            <label for="no">
+                <input type="radio" id="no" name="yes-no-sometimes" value="No"> No
+            </label>
+            <label for="sometimes">
+                <input type="radio" id="sometimes" name="yes-no-sometimes" value="Sometimes"> Sometimes
+            </label><br><br>
+            <h3 class="#">What breakfast foods do you like? (Please select one option)</h3>
+            <label>
+                <input type="checkbox" name="foods" value="cereal"> Cereal
+            </label>
+            <label>
+                <input type="checkbox" name="foods" value="pancakes"> Pancakes
+            </label>
+            <label>
+                <input type="checkbox" name="foods" value="scrambled eggs"> Scrambled Eggs
+            </label>
+            <label>
+                <input type="checkbox" name="foods" value="toast"> Toast
+            </label>
+            <input type="checkbox" name="foods" value="other"> Other
+            </label>
+            <input type="checkbox" name="foods" value="none"> None
+            </label><br><br>
+            <h3 class="#">If you selected "Other" please leave a comment on your preferred breakfast food.</h3>
+            <label>
+                <textarea id="comment" placeholder="Please leave your thoughts."></textarea>
+            </label>
+            <label>
+                <button type="submit" id="submit">Submit</button>
+            </label>
+        </form>
+    </main>
+</body>
+
+</html>
